@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Penduduk extends Model
+{
+    use HasFactory;
+
+    protected $table = "tb_penduduk";
+
+    protected $primaryKey = 'NIK';
+
+    protected $fillable = ['NIK', 'Nama', 'Jenis_Kelamin', 'Agama', 'Pendidikan', 'Pekerjaan', 'Penghasilan' ];
+
+}
